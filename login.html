@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>OdontoPro - Sistema de Gerenciamento</title>
+</head>
+
+<body>
+    <img src="src/image/imagem OdontoPro.png" alt="">
+    <div class="login-container">
+        <form id="loginform" class="login-form">
+            <img src="src/image/Logo + icon.png" alt="">
+            <h2>Faça Login com sua conta</h2>
+            <p>Digite seu e-mail e senha para fazer login</p>
+            <div class="input-group">
+                <label for="emai">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="senha" id="senha" name="senha" required>
+            </div>
+            <a href="Manter logado">Manter Logado</a>
+            <button type="submit">Entrar na Conta</button>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+    <div class="LoginRedesSociais">
+        <p>Entrar com Redes Socais</p>
+        <button class="Logar-Facebeook">
+            <p>Continuar com Facebeook</p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACM0lEQVR4nL3Ty28SURQG8JFYNRpDxbdWjVUptOhCjHHR6srY1jTGuHGrf4ALty6m4gMxtqZQi2BFHmrRWHdGE/cuDIlLTUpLgQ4dhqEwM2lsTZPPXNJeZmAGdKEnmc0sfjnnnvMxzH8tFiZbVHEcC0n97eQbLzrIv792Ot+WLfaY8sAakeatYQlHQ2W0j5dw+NkCDgWKuTa/6D44Vt72R5j9pXzWHlOEjogMHQwH/CLaxgrY5xPye71CT1PMFpWXm2KjAvZ489g1wi/vGOZ6Go2p25kzWkL8+xKSpRVk5BV4E4vYPcJj5+N5WIa4vNmdrh/fFlM8Rp194X5BXe9+/Kxg24dysDyag9mTcWs1FiaDBeBUdIFCwW+LOB0uwB7IU6z1YZaAvGb7HSHluNGbXZosUbA7Jmo6W8Ww1Z3GFle6i4LWsNRntIAr76ug87mgj92bxeY7qV4KHnlR7q3Frn+UYFS+r7IWu5vCxtszFyhIElDb2bUPxuCNT0UNtsk1gxbXVHVk8qAkAeo7swYEnJ8o4ubnKnx1soBzER77h7NabDDJMQzWaRZN4qQ+2rU7G3gjUvDE01xdZxsGp9HCJu/X3SHJJomTGiMLGIgXKOjwczrYFM+wqVbdtJBskjipT+PihEDBridztZ0trb813c00KpJNEqe10+h/nadg52hW01lTjFktkk0SJ7Mnk+t7xVPQ5s1UFlB5M6MxGxYL0+W4eCaYKLPBhMw6fbMn67b5r+s3CaOn/EQnOYcAAAAASUVORK5CYII="
+                alt="logo Facebeook">
+            <button class="Logar-Google">
+                <p>Continuar com Google</p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAACFElEQVR4nGNgoCf4X6/F9qbEJPhtvmHDmyKD+nflxv7/6xlYSDboY6mB6utEo5PPnE3+PrU0/Y+Mn7mY/H2dYnTsQ7WxMlGGfagySnvmZoxhEAZ2Mfn7rtAgC79hJfrZz2xN8BsEc6mzyd9PpcYBOA17X6+v8NzD+A+yppdhxi/f5hoWvU0wkf1crCf2vtSw8FW48QuQYaDwxOu6H6v0pryONoYb9jrFaDcutZ/qjTXwGvb/PwPTrwO6z3/v1/3/qdUA7DIGSsDPA7q6vw/o/ofjrXpO6Gr8qmc/xoV9quY+qO2stYUr/n1A1xPZwP/7tXjQDRRNPfAfHy7tbqxBGLhfz4NSA0u6mqoRXt6vpwMz7NcB3f/n95hhJAd0b9qULvuCbGBNT1MAaqTs1332cb/+/9Ytrv9zN3m+IRTuLmUL38EMU83a+jd01SpmFAUXd5vPSNno/d9nfQAYN2113YfLsISm/sPIrotqmHwCQ9HcLc5KkRt8/8IMBOGCzZ6vJm13LO3e4ig/Z7u7+pQtjjX5mzzexU8t/S+Ztg/iuuytf6u7mrHn6ynbHfKCNvjBDcSHE+an/VfP2fyvqKs5F2/YTNnikBeF5lJsOHqDz9+p673wFw4wsGCbo3LzFtfjkRt8MAyO2uDzt3Wry9FZG10ViTIMGcw8Y8w6c6tTwKQtTvWTtznUzd5p51v/n4GJZIMoAQCvXrzatsacUQAAAABJRU5ErkJggg=="
+                    alt="google-logo">
+            </button>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
