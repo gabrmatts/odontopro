@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.pacienteimg {
+    flex: 1;
+}
+
+.pacienteimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Outros estilos mantidos */
+
+.logomarca img {
+    width: 203px;
+}
+
+.logomarca {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.acessar-conta {
+    background: #00bfff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.acessar-conta:hover {
+    background-color: #0099ff;
+}
+
+.esqueci-senha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.outros {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.outros button {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    gap: 8px;
+    min-width: 150px;
+}
+
+.outros button h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.outros button img {
+    width: 20px;
+    height: 20px;
+}
+
+.facebook {
+    color: #1877f2;
+    text-align: center;
+    font-size: 14px;
+}
+
+.google {
+    color: #d93025;
+}
